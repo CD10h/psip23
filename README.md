@@ -7,9 +7,9 @@ Also: yra defaultSettings.yaml sitam ^^^, tai jei kas netingi padaryt actually g
 
 `latexindent -wd -y defaultSettings.yaml filename.tex` ( nebnt klystu )
 ## makefile targets
-`pdf` ( default) -> makes pdf in current dir
-`wordcount` -> word count
-`check` -> runs	chktex
+- `pdf` ( default) -> makes pdf in current dir
+- `wordcount` -> word count
+- `check` -> runs	chktex
 
 ## format
 `fmt` -> runs latexindent 
