@@ -1,0 +1,46 @@
+INFO:  latexindent version 3.20.3, 2023-02-19, a script to indent .tex files
+       latexindent lives here: /usr/share/texmf-dist/scripts/latexindent/
+       Thu Sep 28 10:30:43 2023
+       Filenames:
+          procesai.tex
+          kursinis.tex
+          Procesai.sty
+       total number of files: 3
+INFO:  Processing switches:
+       -wd|--overwriteIfDifferent: will overwrite ONLY if indented text is different
+       -y|--yaml: YAML settings specified via command line
+INFO:  Directory for backup files and indent.log:
+       .
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from /usr/share/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is /home/dutrix
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  YAML settings read: -y switch
+       YAML setting: defaultSettings.yaml
+INFO:  Filename: procesai.tex (1 of 3)
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  -wd switch active
+       Original body matches indented body, NOT overwriting, no back up files created
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+INFO:  Filename: kursinis.tex (2 of 3)
+WARN:  I couldn't find kursinis.tex, are you sure it exists?
+       moving on, no indentation done for kursinis.tex.
+INFO:  Filename: Procesai.sty (3 of 3)
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  -wd switch active
+       Original body matches indented body, NOT overwriting, no back up files created
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+WARN:  at least one of the files you specified does not exist or could not be read
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl

@@ -1,0 +1,64 @@
+
+\usepackage{enumitem}
+\usepackage{etoolbox}
+
+\def\produktusarasas{}
+
+
+%https://tex.stackexchange.com/questions/231055/how-can-i-create-a-list-as-a-variable-that-can-be-appended-and-eventually-typese kazkur zemiau
+
+\def\prodkodlist{}
+
+\newcommand{\printkodlist}[1]{%
+	\textbf{#1}
+
+}%
+
+
+% Procesu template
+\newlist{tabenum}{enumerate}{1}
+\setlist[tabenum]{label*=\arabic*.,
+	labelwidth=2em,
+	leftmargin=2em,
+	nosep,
+	before=\begin{minipage}[t]{\hsize},
+		after=\end{minipage}}
+
+\usepackage{tabularx}
+
+\usepackage[column=0]{cellspace}
+\setlength{\cellspacetoplimit}{\tabcolsep}
+\setlength{\cellspacebottomlimit}{\cellspacetoplimit}
+\addparagraphcolumntypes{X}
+
+% template %
+\newcommand\addrow[2]{#1 & #2\\ \hline}
+
+\newcommand\additemizedrow[2]{#1 &
+	\begin{tabenum}
+		#2
+	\end{tabenum}
+	\\ \hline}
+
+% making stuff convenient %
+\newcommand\pavadinimas[2]{\addrow{Pavadinimas}{#1 #2}} %!!! yra 2 arg \pavadinimas{KODAS}{pavadinimas}
+\newcommand\tikslas[1]{\addrow{Tikslas}{#1}}
+\newcommand\vykdytojai[1]{\additemizedrow{Vykdytojai}{#1}}
+\newcommand\veiklos[1]{\additemizedrow{Veiklos}{#1}}
+\newcommand\ieitys[1]{\additemizedrow{Įeities duomenys}{#1}}
+\newcommand\isvestys[1]{\additemizedrow{Išeities produktai  }{#1}}
+
+
+
+\newcommand\produktaskodas[2]{%
+	\listadd{\prodkodlist}{#1}%
+	\item #1 #2%
+}
+
+% pvz: \isvestis{KODAS}{Pavadinimas}
+\newcommand\isvestis[2]{\produktaskodas{#1}{#2}}
+\newcommand\ieitis[2]{\produktaskodas{#1}{#2}}
+
+\newenvironment{procesas}{\tabularx{\textwidth}{|0{wl{3cm}}|0{X}|}\hline}{\endtabularx}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}

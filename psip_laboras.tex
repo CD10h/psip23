@@ -1,0 +1,57 @@
+\documentclass{VUMIFPSkursinis}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{biblatex}
+\usepackage{microtype}
+\usepackage{Procesai}
+
+
+% Titulinio aprašas
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\institute{Informatikos institutas}  % Užkomentavus šią eilutę - institutas neįtraukiamas į titulinį
+\department{Programų sistemų studijų programa}
+\papertype{Kursinis darbas}
+\title{Programų sistemų kūrimo metodų tyrimas}
+\titleineng{Investigation of Methods of Software Development}
+\status{4 kurso ... grupės studentas}
+\author{Vardenis Pavardenis}
+% \secondauthor{Vardonis Pavardonis}   % Pridėti antrą autorių
+\supervisor{prof. habil. dr. Vardaitis Pavardaitis}
+% \addsignatureplaces{} % prideda parašų vietas tituliniame puslapyje
+\date{Vilnius – \the\year}
+
+% \bibliography{bibliografija}
+
+
+\begin{document}
+\maketitle
+
+% \tableofcontents
+
+\sectionnonum{Įvadas}
+Įvade apibūdinamas darbo tikslas, temos aktualumas ir siekiami rezultatai.
+Darbo įvadas neturi būti dėstymo santrauka. Įvado apimtis 1–-2 puslapiai.
+
+\section{Procesai}
+
+\input{procesai.tex}
+
+\forlistloop{\printkodlist}{\prodkodlist}
+
+\subsection{Poskyris}
+
+
+\end{document}
