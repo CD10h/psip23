@@ -9,5 +9,15 @@ check:
 
 # fmt:
 
+getprocess:
+	grep pavadinimas proc*.tex
+
+getinput:
+	grep ieitis proc*.tex
+
+getoutput:
+	grep isvestis proc*.tex
+
+getproducts: getinput getoutput
 clean:
 	$(RM) build/*
