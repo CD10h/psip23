@@ -1,0 +1,99 @@
+
+\begin{procesas}
+
+	\pavadinimas{DEPL}{ Sistemos įdiegimas }
+	\tikslas{	Programų sistemos perkėlimas į produkcinę aplinką ir parengimas eksploatacijai }
+	\vykdytojai{
+		\item Programuotojai
+		\item Infrastruktūros inžinieriai
+		\item Produkto palaikymo komanda }
+	\veiklos{
+		\item Perkelti parengtą sistemą į produkcinę aplinką
+		\item Parengti resursus, reikalingus eksploatuoti programų sistemą }
+	\ieitys{
+		\ieitis{KOD}{ Programinė įranga}
+		\ieitis{KOD}{ Projekto įvedimo į eksploataciją planas}
+		\ieitis{KOD}{ NF Reikalavimai }}
+	\isvestys{
+		\isvestis{KOD}{ Paruošta eksploatacijai programų sistema?}
+		\isvestis{KOD}{ Projekto eigos ataskaita }}
+\end{procesas}
+
+
+
+% \begin{procesas}
+
+% 	\pavadinimas{PR\_VER}{Verifikacijos procesas}
+% 	\tikslas{Įsitikinti, kad sistema atitinka funkcinius ir nefunkcinius reikalavimus bei kokybės standartus. Peržiūros procesas yra svarbus siekiant užtikrinti, kad projekto rezultatai atitiktų pradinius tikslus ir lūkesčius.}
+% 	\vykdytojai{
+% 		\item Projekto vadovas
+% 		\item Programuotojai
+% 		\item Testuotojai
+% 		\item Projekto rėmėjas/savininkas (sponsor) }
+% 	\veiklos{
+% 		\item Reikalavimų įvykdymo peržiūra
+% 		\item Įrangos techninio dizaino peržiūra
+% 		\item Dokumentacijos peržiūra }
+% 	\ieitys{
+% 		\ieitis{REQSPEC}{ Reikalavimų specifikacija (PR--AN&PROJ1)}
+% 		\ieitis{ARCHSPEC}{ Sistemos architektūros specifikaci}
+% 		\ieitis{TECHSPEC}{ Techninė specifikacija}
+% 		\ieitis{TPLAN}{ Testavimo planas}
+% 	}
+% 	\isvestys{
+% 		\isvestis{KOD}{ Kokybės audito ataskaita}
+% 		\isvestis{KOD}{ Priėmimo dokumentas }
+% 		}
+
+% \end{procesas}
+
+\begin{procesas}
+
+	\pavadinimas{KOD}{ Perleidimas klientui}
+
+\end{procesas}
+
+
+\begin{procesas}
+
+	\pavadinimas{PGAP}{Produkto garantinio aptarnavimo procesas}
+	\tikslas{Visiems paslaugos rezultato elementams (sudėtinėms dalims, pagal Lietuvos Respublikos Civilinį kodeksą, toliau –- Civilinis kodeksas), kuriems pagal Civilinį kodeksą būtų galimybė sutartiniu įsipareigojimu suteikti kokybės garantijos terminą, pirkimo sutartimi suteikiamas ne mažesnis nei 12 mėnesių kokybės garantijos terminas, kurio pradžia laikoma konkrečios paslaugos dalies priėmimo-perdavimo akto pasirašymo diena. Garantinės priežiūros paslaugos apima sukurtos ir modernizuotos programinės įrangos sutrikimų šalinimą bei Perkančiosios organizacijos atsakingų asmenų konsultavimą.}
+	\vykdytojai{
+		\item Projekto vadovas
+		\item Programuotojai
+		\item Užsakovas }
+	\veiklos{
+		\item Įvertinti, ar kliento pranešta klaida bus taisoma ( pvz not a bug - a feature)
+		\item Jeigu, taip, sukurti užduotį su reikalavimais
+		% gal split i kita task apacioj
+		\item Užsakovo konsultavimas produkto veikimo, naudojimo bei tobulinimo klausimais
+		\item Incidentų identifikavimas, klasifikavimas, registravimas priežiūros tarnybos (angl. Help Desk) programinėję įrangoje ir šalinimas
+		\item Atsiradusių produkto trikdžių sprendimas
+		\item Kokybės garantija taikoma:
+		\item Visiems paslaugos teikimo metu sukurtiems ir modifikuotiems funkcionalumams pagal suderintą projektinę dokumentaciją
+		\item Trečiųjų šalių komponentų, naudojamų produkte, atnaujinimo darbams
+		\item Bet kokiems įsilaužimams į programinės įrangos ir / ar atskirų jos elementų sandarą, kurie galėtų daryti įtaką elementų veikimui }
+	\ieitys{
+		\ieitis{pro}{ Projekto dokumentacija (PR--PLAN1)}
+		\ieitis{KOD}{ Projekto plano dokumentas (PR--PLAN1) }}
+	\isvestys{
+		\isvestis{KOD}{  Projekto garantinio aptarnavimo planas}
+		\isvestis{KOD}{ Žemiau pateikiamas principinis incidento apdorojimo procesas }}
+\end{procesas}
+
+\begin{procesas}
+
+	\pavadinimas{PR\_END}{ Užbaigimas}
+	\tikslas{Užbaigti sistemos priežiūrą}
+	\ieitys{
+		\ieitis{KOD}{ a }} %????
+	\isvestys{
+		\isvestis{KOD}{ Pranešimas apie nebepalaikymą}
+		\isvestis{KOD}{ Formalus doc }}
+	\veiklos{
+		\item Nustojama stebėti sistema
+		\item Klientui pranešama, kad garantinis aptarnavimas baigėsi }
+	\vykdytojai{
+		\item a }
+
+\end{procesas}

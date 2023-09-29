@@ -1,0 +1,197 @@
+
+\begin{procesas}
+
+	\pavadinimas{PPP}{Projekto pasiūlymo procesas}
+
+	\tikslas{Paruošti projekto pasiūlymą, kuris bus įteiktas klientui}
+
+	\ieitys{
+		\ieitis{KlPI}{ Kliento projekto idėja}
+		\ieitis{SPD}{ Senų projektų duomenys }}
+	\isvestys{
+		\isvestis{PrPas}{ Projekto pasiūlymas }}
+	\veiklos{
+		\item Įvykdoma preliminari analizė, kurios metu nustatoma:
+		\item Preliminari kaina
+		\item Preliminari apimtis
+		\item Preliminarus laikas, kuris reikalingas projektui įgyvendinti
+		\item Paruošiamas pasiūlymas klientui }
+	\vykdytojai{
+		\item a }
+
+\end{procesas}
+
+\begin{procesas}
+
+	\pavadinimas{PR\_OFFER}{Projekto pasiūlymo pateikimas klientui}
+
+	\tikslas{pateikti klientui pasiūlymą ir susitarti jį vykdyti}
+
+	\veiklos{
+		\item Pasirašom sutartį }
+	\ieitys{
+		\ieitis{PR\_PAS}{ Projekto pasiūlymas klientui }}
+	\isvestys{
+		\isvestis{KONTR} {Kontraktas }
+	}
+
+\end{procesas}
+
+
+% \begin{procesas}
+% 	\pavadinimas{PR\_INIC}{Projekto inicijavimas}
+
+% 	\tikslas{Pasiruošti projekto planavimo fazei pradėti gautą projektą ar projekto etapą. Išanalizuoti poreikius. neresuotąsias šalis, jų įtaką ir poveikį projektui.}
+% 	\ieitys{
+% 		\ieitis{KOD}{ placeholder}
+% 	}
+% 	\isvestys{
+% 		\isvestis{PASK}{ Projekto paskyra (PR--INIC1)}
+% 		\isvestis{PROJPLAN}{ Projekto planas (PR--INIC2)}
+% 	}
+% \end{procesas}
+
+
+
+
+\begin{procesas}
+
+	\pavadinimas{PRPLAN}{ Projekto planavimas}
+
+	\tikslas{	 Paruošti planą sėkmingam projekto valdymui ir produkto sukūrimui.  }
+	\vykdytojai{
+		\item Projekto vadovas
+		\item Programinės įrangos inžinierius
+	}
+	\veiklos{
+		\item Paruošti projekto planą
+		\item Išanalizuoti projekto apimtį (veiklas, reikalingas sėkmingam projekto vykdymui), paruošti apimties valdymo planą su paskirtais resursais.
+		\item Paruošti/atnaujinti reikalavimų valdymo planą
+		\item Paruošti suinteresuotųjų šalių integravimo į projekto procesą planą
+		\item Patikrinti ir patvirtinti projekto planąn
+		\item Kokybės audito ataskaita
+	}
+	\isvestys{
+		\isvestis{PLANDOC}{ Projekto plano dokumentas}
+		\isvestis{PRP}{ Kokybės audito ataskaita}
+		\isvestis{TESTPLAN}{ Testavimo planas}
+	}
+\end{procesas}
+
+\begin{procesas}
+
+	\pavadinimas{PR\_ANA}{Projekto reikalavimų analizė}
+
+	\tikslas{Išanalizuoti ir specifikuoti projekto reikalavimus}
+
+	\ieitys{
+		\ieitis{PLANDOC}{ Projekto plano dokumentas}
+		\ieitis{CLIREQ}{ Kliento reikalavimai }}
+	\isvestys{
+		\isvestis{CLIREQ}{ Kliento reikalavimai}
+	}
+	\veiklos{
+		\item Kartu su užsakovu išsiaiškinti aukšto lygmens sistemos reikalavimus
+		\item Sukurti aukšto lygmens reikalavimų dokumentą
+	}
+	\vykdytojai{
+		\item Projekto vadovas
+		\item Užsakovas }
+
+\end{procesas}
+
+
+
+% \begin{procesas}
+
+% 	\pavadinimas{PR\_TECHREQ}{Techniniai reikalavimai}
+
+% 	\tikslas{Transformuoti kliento reikalavimus į techninius sitemos reikalavimus}
+
+% 	\ieitys{
+% 		\ieitis{CLIREQ}{ Kliento reikalavimai}
+% 		\ieitis{asdasd} {Projekto apribojimai ( laikas etc)}
+% 	}
+% 	\isvestys{
+% 	% \isvestis{KOD}{ Testavimo planas (PR--AN&PROJ5)}
+% 	% \isvestis{tech}{ Projekto eigos ataskaita (PR--AN&PROJ6)}
+% 	\isvestis{ARCHSPEC}{ Sistemos architektūros specifikacija (PR--AN2)}
+% 	\isvestis{TECHSPEC}{ Techninė specifikacija (PR--AN4)}
+% 	\vykdytojai{
+
+% 		\item Projekto vadovas
+% 		\item Programinės įrangos inžinierius
+% 		\item Programuotojai
+% 		\item DevOps (?)
+% 	}
+% 	\veiklos{
+% 		\item Suformuoti aukšo lygmens sistemos architektūrą
+% 		\item Atmesti reikalavimus, kurių neįmanoma įgyvendinti per laiką ir apimtį
+% 	}
+
+% \end{procesas}
+
+
+\begin{procesas}
+
+	\pavadinimas{KOD}{Projektavimas (PROJ)}
+
+	\tikslas{Paruošti sistemos architektūrą bei techninio įgyvendinimo planą.}
+
+
+	\veiklos{
+		\item Paruošti sistemos architektūrą
+		\item Paruošti techninę specifikaciją
+		\item Paruošti testavimo planą
+		\item Paruošti projekto eigos ataskaitą
+		\item Paruošti projektinę aplinką
+	}
+	\ieitys{
+		\ieitis{KOD}{ Projekto paskyra (PR--INIC1)}
+		\ieitis{KOD}{ Projekto plano dokumentas (PR--PLAN1) }}
+	\isvestys{
+
+		\isvestis{KOD}{ Projekto vykdymo resursų reikalavimai (PR--AN5)}
+	}
+\end{procesas}
+
+
+
+
+
+\begin{procesas}
+
+	\pavadinimas{PR\_REV}{Bendra peržiūra}
+
+\end{procesas}
+
+\begin{procesas}
+
+	\pavadinimas{PR\_ARCH}{Architektūros dizainas}
+
+\end{procesas}
+
+
+\begin{procesas}
+
+	\pavadinimas{PR\_DEPLAN}{Projekto įvedimo į eksploataciją planavimas }
+	\tikslas{Gamybinės aplinkos parengimas produkto eksploatacijai, diegimo plano parengimas }
+	\vykdytojai{
+		\item Dev Ops (Infrastruktūros inžinieriai?)+
+		\item Projekto vadovas }
+	\veiklos{
+		\item Gamybinės aplinkos parengimas produkto eksploatacijai
+		\item Infrastruktūros parengimas debesijos infrastruktūroje
+		\item Diegimo plano sudarymas
+		\item Pagal poreikį
+		\item Bandomosios eksploatacijos plano ir įgyvendinimo rengimas
+		\item Duomenų migravimas
+		\item Sukonfigūravimas viešai prieigai }
+	\ieitys{
+		\ieitis{KOD}{ Sistemos architektūros specifikacija}
+		\ieitis{KOD}{ Techninė specifikacija}
+		\ieitis{KOD}{ Projekto dokumentacija }}
+	\isvestys{
+		\isvestis{KOD}{Projekto įvedimo į eksploataciją planas}
+	}
+\end{procesas}
