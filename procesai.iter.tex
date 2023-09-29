@@ -1,7 +1,7 @@
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{Pasiruosimas kitai iteracijai}
+	\pavadinimas{PR\_NEXTIT}{Pasiruosimas kitai iteracijai}
 
 	\tikslas{Paskirstyti užduotis programuotojams}
 
@@ -18,9 +18,40 @@
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{Uzduoties programavimas}
+	\pavadinimas{PR\_TIMPL}{Programų sistemos vystymas}
 
+	\tikslas{Implementuoti techninę užduotį}
+	\vykdytojai{
+		\item Projekto Vadovas
+		\item Programuotojai
+		\item Testuotojai
+		\item Devops }
+	\veiklos{
+		\item Užduoties implementacija pagal specifikacijas
+		\item Vykdymo progreso sekimas
+		\item Automatinių testų paruošimas
+		\item Automatinių testų paleidimas
+	}
+	\ieitys{
+		\ieitis{KOD}{ Reikalavimų specifikacija}
+		\ieitis{KOD}{ Sistemos architektūros specifikacija}
+		\ieitis{KOD}{ Techninė specifikacija}
+		\ieitis{KOD}{ Projekto plano dokumentas}
+		\ieitis{KOD}{ Testavimo planas}
+		\ieitis{KOD}{ Programinis kodas}
+		\ieitis{KOD}{ Defektų sąrašas}
+		\ieitis{KOD}{ Automatiniai programų sistemos dalies testai}
+		\ieitis{KOD}{ Projekto eigos ataskaita}
+	}
+	\isvestys{
+		\isvestis{KOD}{ Programinis kodas}
+		\isvestis{KOD}{ Automatiniai programų sistemos dalies testai}
+		\isvestis{KOD}{ Testavimo planas}
+		\isvestis{KOD}{ Projekto eigos ataskaita}
+	}
 \end{procesas}
+
+
 
 \begin{procesas}
 
@@ -49,13 +80,13 @@
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{Uzduoties release}
+	\pavadinimas{PR\_TREL}{Uzduoties release}
 
 \end{procesas}
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{ Refinement}
+	\pavadinimas{PR\_TREF}{ Refinement}
 
 	% - Gryniname tech. reikalavimus iš user stories
 	% - Pr
@@ -63,7 +94,7 @@
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{ Sprint retro}
+	\pavadinimas{PR\_TREV}{ Sprint retro}
 
 	% - Patikrinam, ar telpam į laiką
 	% - Perkeliam užduotis, kurių nespėjom
@@ -73,7 +104,7 @@
 
 \begin{procesas}
 
-	\pavadinimas{KOD}{ Continuous integration}
+	\pavadinimas{PR\_CI}{ Continuous integration}
 
 \end{procesas}
 
